@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function minArray(arr1) {
+        let min = arr1[0];
+        for(let i = 0; i < arr1.length; i++){
+            if(arr1[i] < min){
+                min = arr1[i];
+            }
+        }
+        return min;
+    }
+    // let arr1 = [3, 5, 1, 8, -3, 7, 8];
+    let min = minArray([3, 5, 1, 8, -3, 7, 8]);
+    alert(min);
+
+
+    let arr=[2,4,6,84,];
+    let min1=minArray(arr);
+    alert(min1);
+
+</script>
+</body>
+</html>
+<!--Xây dựng hàm nhận vào một tham số là một mảng cho trước.-->
+<!--Hàm thực hiện tìm giá trị nhỏ nhất trong mảng và trả về giá trị đó-->
+<!--. Sử dụng hàm vừa xây dựng trên với mảng như sau:-->
+
+<!--arr1: [3, 5, 1, 8, -3, 7, 8]-->

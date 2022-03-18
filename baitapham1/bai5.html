@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+let arr=['Polaris','Aldebaran', 'Deneb', 'Vega', 'Altair', 'Dubhe' ,'Regulus'];
+let arr2=['Ursa', 'Minor', 'Tarurus', 'Cygnus', 'Lyra', 'Aquila', 'Ursa', 'Major', 'Leo'];
+let a=prompt("nhap can tim");
+function tim(a){
+    let vitri = arr.indexOf(a);
+    if(arr.indexOf(a)==-1){
+        alert("Ko co");
+    }else{
+        return arr2[arr.indexOf(a)];
+    }
+}alert(tim(a));
+</script>
+</body>
+</html>
+<!--Polaris, Aldebaran, Deneb, Vega, Altair, Dubhe và Regulus-->
+<!--Ursa Minor, Tarurus, Cygnus, Lyra, Aquila, Ursa Major và Leo-->

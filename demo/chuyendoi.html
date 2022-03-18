@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1><label>Chuyen doi sang foot</label></h1>
+    <p>Foot:<input id="ad" type="number" placeholder="footToMeter"
+           onInput="so(this.value)"
+           onChange="so(this.value)">
+    </p>
+    <p>meters: <div id="ac"></div></p>
+
+
+
+    <h2><label>Chuyen doi sang meter</label></h2>
+    <p>Meters:<input id="afasf" type="number" placeholder= "meterToFoot"
+    oninput="so1(this.value)"></p>
+    <p>Foot:<div id="af"></div> </p>
+
+
+
+    <script>
+        function so(valNum) {
+            valNum = parseFloat(valNum);
+            document.getElementById("ac").innerHTML = 3.279*valNum;
+        }
+
+        function so1(number){
+            number = parseFloat(number);
+            document.getElementById("af").innerHTML=0.305*number;
+        }
+    </script>
+</body>
+</html>
+<!--function footToMeter(foot)-->
+<!--Chuyển đổi từ meters sang feet:-->
+
+<!--function meterToFoot(meter)-->
+<!--Công thức chuyển đổi như sau:-->
+
+<!--meter = 0.305 * foot-->
+<!--foot = 3.279 * meter-->
